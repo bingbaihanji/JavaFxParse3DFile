@@ -7,7 +7,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 /**
  * @author 冰白寒祭
  * @date 2024-11-11 15:36:10
- * @description //TODO
+ * @description 配置启动类
  */
 
 @SpringBootApplication
