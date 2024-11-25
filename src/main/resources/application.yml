@@ -1,0 +1,12 @@
+logging:
+  config: classpath:logback-spring.xml
+
+javafx:
+  prism:
+    ifPrint: true
+    dirtyopts: false      # 禁用脏位图优化。 禁用脏区域优化会导致 JavaFX 重新渲染整个场景，从而可能提高质量，但会影响性能。
+    order: d3d            # 强制使用 Direct3D 渲染管线
+    allowhidpi: true      # 不允许 JavaFX 在高 DPI 显示器上启用高分辨率渲染
+    forceGPU: true        # 强制启用 GPU 渲染，即使设备被系统判定为不支持硬件加速
+    verbose: true         # JavaFX 提供了调试模式，可以输出更详细的日志
+    renderquality: best   # 控制渲染质量，设置为 best 可以提高渲染的质量，进而改善抗锯齿效果 [low medium high best]
